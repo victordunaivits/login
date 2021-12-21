@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200&display=swap');
+
+* {
+    font-family: 'Epilogue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3F3F3F;
+    background: url('./bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container {
+    height: 40rem;
+    width: 70rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Parte da esquerda */
+.img-form {
+    height: 100%;
+    width: 50%;
+    background: #C55353;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+}
+
+.img-form h1 {
+    font-size: 4rem;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+
+.img-form h2 {
+    font-size: 2rem;
+    margin-left: 6rem;
+}
+
+/* Parte da direita */
+.content-form {
+    height: 100%;
+    width: 50%;
+    background: #F5F5F5;
+}
+
+.container-form {
+    margin: 7rem 0 0 3rem;
+}
+
+.login {
+    font-size: 2.5rem;
+}
+
+/* Formulário */
+form {
+    margin-top: 2rem;
+}
+
+.fa {
+    color: #3F3F3F;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20rem;
+    height: 2.2rem;
+    background: #FFF;
+    border-radius: 5px;
+    border: solid 1px #d7d7d7;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.txt {
+    padding: 0 12px;
+    height: 100%;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.txt::placeholder {
+    font-size: .9rem;
+}
+
+/* Esqueceu senha */
+.pwd {
+    font-weight: 600;
+    font-size: .8rem;
+    margin-left: 14.3rem;
+}
+
+.pwd::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0px;
+    background: #3F3F3F;
+    margin-left: 14.3rem;
+}
+
+.pwd:hover::after {
+    width: 108px;
+    transition: .5s;
+}
+
+/* Botão login */
+.btnLogin {
+    width: 21.5rem;
+    height: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+    background: #C55353;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btnLogin:hover {
+    background: #ba3f3f;
+    transition: .2s;
+}
+
+/* OR */
+.or {
+    margin-left: 10.3rem;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+/* Redes sociais */
+.social-media {
+    margin-left: 6.5rem;
+    margin-top: 1rem;
+}
+
+.social-media i {
+    background: #8c8c8c;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: #FFF;
+}
+
+.social-media i:hover {
+    background: #C55353;
+    transition: .2s;
+}
+
+/* Cadastrar */
+.signup {
+    margin-top: 8rem;
+    margin-left: 7.5rem;
+}
+
+.sign {
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.sign::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0px;
+    background: #3F3F3F;
+}
+
+.sign:hover::after {
+    width: 112px;
+    transition: .5s;
+}
+
+/* Responsividade */
+@media (max-width: 1150px) {
+    .container {
+        width: 55rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 30rem;
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-form {
+        display: none;
+    }
+
+    .content-form {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 380px) {
+    .container-form {
+        margin-left: .5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .container-form {
+        margin-left: 1rem;
+    }
+
+    .textbox {
+        width: 17rem;
+    }
+
+    .pwd {
+        margin-left: 11.3rem;
+    }
+
+    .btnLogin {
+        width: 18.3rem;
+    }
+
+    .or {
+        margin-left: 8.7rem;
+    }
+
+    .social-media {
+        margin-left: 4.8rem;
+    }
+
+    .signup {
+        margin-left: 5.5rem;
+    }
+}

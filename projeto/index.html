@@ -13,31 +13,33 @@
 <body>
     <div class="container">
         <div class="img-form">
-            <h1>Welcome!</h1>
-            <h2>Sign in to continue.</h2>
+            <h1>Bem-vindo!</h1>
+            <h2>Entre para continuar.</h2>
         </div>
 
         <div class="content-form">
             <div class="container-form">
                 <h1 class="login">Login</h1>
 
-                <form>
-                    <div class="textbox">
+                <form id="form">
+                    <div class="textbox textbox1">
                         <i class="fa fa-user fa-lg"></i>
-                        <input type="email" class="txt" placeholder="Email or Username">
+                        <input type="email" id="email" class="txt" placeholder="E-mail ou Usuário" autocomplete="off" required>
                     </div>
-
-                    <div class="textbox">
+                    <div class="msg1 error"></div>
+                    
+                    <div class="textbox textbox2">
                         <i class="fa fa-unlock-alt fa-lg"></i>
-                        <input type="password" class="txt" placeholder="Password">
+                        <input type="password" id="password" class="txt" placeholder="Senha" required>
                     </div>
-
-                    <a class="pwd">Forgot password?</a>
+                    <div class="msg2 error"></div>
+                    
+                    <a class="pwd">Esqueci minha senha</a>
 
                     <input type="submit" class="btnLogin" value="Login">
                 </form>
 
-                <span class="or">OR</span>
+                <span class="or">OU</span>
 
                 <div class="social-media">
                     <a class="social"><i class="fa fa-facebook-official fa-lg"></i></a>
@@ -46,7 +48,7 @@
                 </div>
 
                 <div class="signup">
-                    <a class="sign">New here? Sign up</a>
+                    <a class="sign">Novo aqui? Cadastre-se</a>
                 </div>
 
             </div>

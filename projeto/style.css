@@ -51,7 +51,7 @@ a {
 .img-form h1 {
     font-size: 4rem;
     margin-right: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .img-form h2 {
@@ -93,7 +93,11 @@ form {
     border-radius: 5px;
     border: solid 1px #d7d7d7;
     padding: 0 10px;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
+}
+
+.textbox2 {
+    margin-top: 10px;
 }
 
 .txt {
@@ -104,15 +108,23 @@ form {
     font-weight: 600;
 }
 
+
 .txt::placeholder {
     font-size: .9rem;
+}
+
+/* Mensagem de erro */
+.error {
+    font-size: .7rem;
+    font-weight: 600;
+    color: #eb3434;
 }
 
 /* Esqueceu senha */
 .pwd {
     font-weight: 600;
     font-size: .8rem;
-    margin-left: 14.3rem;
+    margin-left: 13rem;
 }
 
 .pwd::after {
@@ -121,11 +133,11 @@ form {
     height: 1px;
     width: 0px;
     background: #3F3F3F;
-    margin-left: 14.3rem;
+    margin-left: 13rem;
 }
 
 .pwd:hover::after {
-    width: 108px;
+    width: 130px;
     transition: .5s;
 }
 
@@ -177,7 +189,7 @@ form {
 /* Cadastrar */
 .signup {
     margin-top: 8rem;
-    margin-left: 7.5rem;
+    margin-left: 6.7rem;
 }
 
 .sign {
@@ -194,7 +206,7 @@ form {
 }
 
 .sign:hover::after {
-    width: 112px;
+    width: 148px;
     transition: .5s;
 }
 
@@ -203,6 +215,17 @@ form {
     .container {
         width: 55rem;
     }
+
+    .img-form h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .img-form h2 {
+        font-size: 1.8rem;
+        margin-left: 2rem;
+    }
+
 }
 
 @media (max-width: 900px) {

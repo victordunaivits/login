@@ -14,3 +14,4 @@
 
 <h2> Imagem do projeto </h2>
 <img src="./login.png"style="height: 400px">
+<img src="./gif.gif"style="height: 400px">

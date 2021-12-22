@@ -19,8 +19,8 @@
 <h2>Pré-requisitos</h2>
 <p>Antes de começar, você vai precisar ter instalado as seguintes ferramentas:</p>
 <ul>
-    <li><a href="https://nodejs.org/pt-br/download/">Node.js</li>
-    <li><a href="https://gitforwindows.org/">Git</li>
+    <li><a href="https://nodejs.org/pt-br/download/" target="_blank">Node.js</li>
+    <li><a href="https://gitforwindows.org/" target="_blank">Git</li>
 </ul>
 
 <h2>Clone este repositório</h2>
